@@ -48,11 +48,16 @@
             font-family: '宋体';
             color: rgb(207, 89, 116);
         }
+         audio{
+            display: block;
+            margin:auto;
+            margin-top: 10px;
+        }
     </style>
 </head>
-<body>
-    <audio autoplay="" loop=""> <source src="./bgm/Love Story.mp3"></audio>
+<body>   
     <h1>心怡是敬元的宝贝</h1>
+    <audio autoplay="autoplay" loop="loop" controls="controls" src="./bgm/Love Story.mp3"></audio>
     <div class="box">
         <img id="pic" src="img/1.jpg" />
     </div>
@@ -69,7 +74,7 @@
             n--;
             if(n==0)
             {
-                n=6;
+                n=5;
             }
             pic.src="img/"+n+".jpg"
         }
@@ -86,7 +91,7 @@
             pic.src="img/"+n+".jpg"
             
         }
-        setInterval(picLunH,2000);
+        setInterval();
     </script>
 </body>
 </html>
